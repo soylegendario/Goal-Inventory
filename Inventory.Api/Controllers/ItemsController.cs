@@ -48,7 +48,7 @@ public class ItemsController : ControllerBase
         return StatusCode(StatusCodes.Status201Created);
     }
     
-    [HttpDelete("/{name}")]
+    [HttpDelete("{name}")]
     [Authorize]
     [SwaggerOperation("Delete a item by name")]
     [SwaggerResponse(200, Description = "Operation success")]

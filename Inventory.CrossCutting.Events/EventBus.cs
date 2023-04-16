@@ -1,6 +1,6 @@
 namespace Inventory.CrossCutting.Events;
 
-public class EventBus : IEventBus
+internal class EventBus : IEventBus
 {
     
     private readonly Dictionary<Type, List<Delegate>> _subscribers;

@@ -44,7 +44,6 @@ public static class Startup
         services.AddAuthorization();
         // TODO: Enable hosted service (fix DI issue con scoped services)
         // services.AddHostedService<ExpiredItemsNotificatorHostedService>();
-        services.AddSingleton<IEventBus, EventBus>();
 
         return services;
     }

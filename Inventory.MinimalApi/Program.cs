@@ -18,6 +18,7 @@ var configuration = new ConfigurationBuilder()
 
 services
     .AddApiServices()
+    .AddEventBus()
     .AddInfrastructureServices(configuration)
     .AddApplicationServices();
 
