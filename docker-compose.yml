@@ -9,7 +9,7 @@
       dockerfile: Inventory.Api/Dockerfile
 
   eventbus:
-    image: rabbitmq:3-management-alpine
+    image: rabbitmq:3-management
     container_name: inventory-eventbus
     ports:
       - 5672:5672

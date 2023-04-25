@@ -13,7 +13,7 @@ var configuration = new ConfigurationBuilder()
 
 services
     .AddApiServices()
-    .AddEventBus()
+    .AddEventBus(configuration.GetConnectionString("RabbitMq"))
     .AddInfrastructureServices(configuration)
     .AddApplicationServices();
 
